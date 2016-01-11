@@ -1,0 +1,3 @@
+﻿  project01.cpp
+f:\object oriented programming\project01\project01\project01\project01.cpp(136): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  project01.vcxproj -> F:\Object Oriented Programming\project01\project01\Debug\project01.exe

@@ -1,0 +1,54 @@
+newmtl ShadGrp_Mat_BloodLvl01
+illum 4
+Kd 0.73 1.00 0.51
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl ShadGrp_Mat_Chain01
+illum 4
+Kd 1.00 0.00 0.04
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl ShadGrp_Mat_Eyes01
+illum 4
+Kd 0.83 0.00 1.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl ShadGrp_Mat_Pillar01
+illum 4
+Kd 0.00 1.00 0.96
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl ShadGrp_Mat_ShrineBase01
+illum 4
+Kd 1.00 0.43 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl ShadGrp_Mat_Stair_Base01
+illum 4
+Kd 0.04 0.00 1.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl ShadGrp_Mat_Stairs01
+illum 4
+Kd 1.00 0.96 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl ShadGrp_Mat_Upper_Circle01
+illum 4
+Kd 0.11 1.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl initialShadingGroup
+illum 4
+Kd 0.50 0.50 0.50
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
