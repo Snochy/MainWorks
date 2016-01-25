@@ -1,0 +1,15 @@
+newmtl Mery_preview_lips_shaderSG
+illum 4
+Kd 0.75 0.36 0.36
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.50 0.50 0.50
+newmtl Mery_preview_skin_shaderSG
+illum 4
+Kd 1.00 0.79 0.69
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.10 0.13 0.14
+Ns 0.00
