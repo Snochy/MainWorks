@@ -55,4 +55,35 @@ string Author::getAddress()
 	return address;
 }
 
+// writeData Function
+// Purpose: writes the book information into a file
+// Parameters: ofstream
+// Returns: none
+void Author::writeData(ofstream& outFile)
+{
+	outFile << getName() << endl << getAddress() << endl;
+}
+
+// readData Function
+// Purpose: read information from the file
+// Parameters: ifstream
+// Returns: none
+void Author::readData(ifstream& inFile)
+{
+
+	//read line for name and check if errored
+	getline(inFile, name);
+	if (!inFile.good())
+		if (inFile.eof())
+			throw EndOfFile();
+		else throw Read_Error();
+
+	//read line for address and check if errored
+	getline(inFile, address);
+		if (!inFile.good())
+			if (inFile.eof())
+				throw EndOfFile();
+			else throw Read_Error();
+}
+
 

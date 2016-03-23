@@ -1,3 +1,6 @@
 ﻿  driver.cpp
-  Project02.vcxproj -> E:\Digtal Media Projects\Projects\GithubProjects\Object Oriented Programming\project02\Project02\Debug\Project02.exe
-  Project02.vcxproj -> E:\Digtal Media Projects\Projects\GithubProjects\Object Oriented Programming\project02\Project02\Debug\Project02.pdb (Partial PDB)
+e:\digtal media projects\projects\githubprojects\object oriented programming\project03\project02\project02\driver.cpp(148): warning C4101: 'e': unreferenced local variable
+e:\digtal media projects\projects\githubprojects\object oriented programming\project03\project02\project02\driver.cpp(152): warning C4101: 'e': unreferenced local variable
+e:\digtal media projects\projects\githubprojects\object oriented programming\project03\project02\project02\driver.cpp(161): warning C4101: 'e': unreferenced local variable
+  Project02.vcxproj -> E:\Digtal Media Projects\Projects\GithubProjects\Object Oriented Programming\project03\Project02\Debug\Project02.exe
+  Project02.vcxproj -> E:\Digtal Media Projects\Projects\GithubProjects\Object Oriented Programming\project03\Project02\Debug\Project02.pdb (Partial PDB)

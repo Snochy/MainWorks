@@ -14,6 +14,8 @@
 
 #pragma once
 #include "Author.h"
+#include <fstream>
+#include "InOutExceptions.h"
 
 //Declares the size of the book list
 const int SIZE = 3;
@@ -56,6 +58,18 @@ public:
 	// Parameters: None
 	// Returns: double
 	double getPrice();
+
+	// writeData Function
+	// Purpose: writes the book information into a file
+	// Parameters: ofstream
+	// Returns: none
+	void writeData(ofstream&);
+
+	// readData Function
+	// Purpose: read information from the file
+	// Parameters: ifstream
+	// Returns: none
+	void readData(ifstream&);
 
 	//The page number and price variables
 private:

@@ -17,6 +17,7 @@
 #include "Book.h"
 
 
+
 // Default Constructor
 // Purpose: Initializes the rectangle width and height to zero
 // Parameters: none
@@ -76,5 +77,52 @@ int Book::getPageNumber()
 double Book::getPrice()
 {
 	return price;
+}
+
+// writeData Function
+// Purpose: writes the book information into a file
+// Parameters: ofstream
+// Returns: none
+void Book::writeData(ofstream& outFile)
+{
+	outFile << getTitle() << endl;
+	getAuthor().writeData(outFile);
+	outFile << getPageNumber() << endl << getPrice() << endl;
+}
+
+// readData Function
+// Purpose: read information from the file
+// Parameters: ifstream
+// Returns: none
+void Book::readData(ifstream& inFile)
+{
+	//Temp string for storing lines read that are doubles and ints
+	string line;
+
+	//read line and check if errored
+	getline(inFile, aTitle);
+	if (!inFile.good())
+		if (inFile.eof())
+			throw EndOfFile();
+		else throw Read_Error();
+
+	//Have author read its data
+	author.readData(inFile);
+
+	//read line for pagenumber and check if errored
+	getline(inFile, line);
+	if (!inFile.good())
+		if (inFile.eof())
+			throw EndOfFile();
+		else throw Read_Error();
+	pageNumber = stoi(line);
+
+	//read line for price and check if errored
+	getline(inFile, line);
+	if (!inFile.good())
+		if (inFile.eof())
+			throw EndOfFile();
+		else throw Read_Error();
+	price = stod(line);
 }
 

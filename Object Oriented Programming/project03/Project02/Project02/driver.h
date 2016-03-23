@@ -17,7 +17,11 @@
 #include <string>
 #include <vector>
 #include "Book.h"
+#include "InOutExceptions.h"
+
 using namespace std;
+
+int errorCode = 0;
 
 // The displayBooks function
 // Purpose: Display all of the data about a book

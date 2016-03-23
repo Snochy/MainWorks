@@ -32,7 +32,7 @@ int main()
 	if (option == CREATE)
 	{
 		createTestFile();
-		cout << "\nTest file has been created.";
+		cout << "\nTest file has been created." << endl;
 	}
 	else if (option == READ)
 	{
@@ -118,10 +118,72 @@ void createTestFile()
 
 void readTestFile()
 {
-	// This is code that you must provide
+	// create a vector for storing the account objects
+	vector<Book> myBooks;
+
+	//Declare stream object
+	ifstream readMe;
+
+	//Try block for exceptions for opening file
+	try
+	{
+		openFile(readMe, "bookData.txt");
+			
+		//Try block for reading the file
+			try
+			{
+				//Check if the next line is end of the file
+				while (readMe.peek() != EOF)
+				{
+					//Create a Book object.
+					Book tempBook;
+					//Call the Book object's readData( ) function.
+					tempBook.readData(readMe);
+					//If the read operations work okay, push the Book object you created into the vector.
+					myBooks.push_back(tempBook);
+				}
+
+				//After reading all of the data, call the displayBooks( ) function to display the contents of the vector.
+				displayBooks(myBooks);
+			}
+			//If the error code in the exception object is for a read error, 
+			// display an error message and return to main, and let the program terminate.
+			catch (invalid_argument e)
+			{
+				cout << "Wrong data type read form file." << endl;
+			}
+			catch (EndOfFile e)
+			{
+				cout << "Reached the end of the file before all needed data was read." << endl;
+			}
+			catch (Read_Error e)
+			{
+				cout << "Unable to read line in file" << endl;
+			}
+			catch (...)
+			{
+				cout << "Unknown error.";
+			}
+	}
+	//If the open operations do not work, catch the exception. 
+	catch (Open_Error e)
+	{
+		cout << "Error, could not open the file, program terminating." << endl;
+	}
+	catch (...)
+	{
+		cout << "Unknown error.";
+	}
 }
 
 void openFile(ifstream& in, const string& _name)
 {
-	// This is code that you must provide
+	// open the file
+	in.open(_name);
+	//Test if file was opened
+	if (in.fail())
+	{
+		//Throw error is it was not able
+			throw Open_Error();
+	}
 }

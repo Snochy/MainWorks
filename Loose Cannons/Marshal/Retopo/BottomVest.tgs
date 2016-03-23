@@ -1,0 +1,56 @@
+<?xml version="1.0" ?>
+<topogunscene appversion="2.00" sceneversion="1.0" yup="1" refmesh="E:\Digtal Media Projects\Projects\GithubProjects\Loose Cannons\Marshal\HighResModels\Undervest.OBJ">
+    <groups>
+        <group name="Group23415" />
+    </groups>
+    <symplanes />
+    <vertices>
+        <vertex group="1" x="-0.000000" y="91.514486" z="5.714659" nx="-0.076142" ny="-0.837563" nz="0.541009" />
+        <vertex group="1" x="-2.556314" y="89.783184" z="6.248550" nx="0.075253" ny="-0.716884" nz="0.693120" />
+        <vertex group="1" x="2.556314" y="89.783184" z="6.248550" nx="-0.075253" ny="-0.716884" nz="0.693120" />
+        <vertex group="1" x="-4.920181" y="91.078830" z="6.248692" nx="-0.553234" ny="0.092879" nz="0.827832" />
+        <vertex group="1" x="4.920181" y="91.078830" z="6.248692" nx="0.553234" ny="0.092879" nz="0.827832" />
+        <vertex group="1" x="-0.000000" y="94.286494" z="6.211864" nx="0.003944" ny="0.745442" nz="0.666559" />
+        <vertex group="1" x="0.000000" y="91.464281" z="5.134491" nx="0.166989" ny="-0.570871" nz="-0.803879" />
+        <vertex group="1" x="-2.638542" y="89.733671" z="5.783484" nx="0.135963" ny="-0.741967" nz="-0.656505" />
+        <vertex group="1" x="2.638542" y="89.733671" z="5.783484" nx="-0.135963" ny="-0.741967" nz="-0.656505" />
+        <vertex group="1" x="-5.052767" y="91.038178" z="5.859641" nx="-0.896373" ny="0.215286" nz="-0.387515" />
+        <vertex group="1" x="5.052767" y="91.038178" z="5.859641" nx="0.896373" ny="0.215286" nz="-0.387515" />
+        <vertex group="1" x="0.000000" y="94.156779" z="5.300863" nx="-0.113998" ny="0.813707" nz="-0.569988" />
+    </vertices>
+    <uvs />
+    <edges>
+        <edge group="1" v1="0" v2="1" />
+        <edge group="1" v1="0" v2="2" />
+        <edge group="1" v1="1" v2="3" />
+        <edge group="1" v1="2" v2="4" />
+        <edge group="1" v1="3" v2="5" />
+        <edge group="1" v1="4" v2="5" />
+        <edge group="1" v1="5" v2="0" />
+        <edge group="1" v1="0" v2="6" />
+        <edge group="1" v1="6" v2="7" />
+        <edge group="1" v1="6" v2="8" />
+        <edge group="1" v1="7" v2="1" />
+        <edge group="1" v1="8" v2="2" />
+        <edge group="1" v1="3" v2="9" />
+        <edge group="1" v1="4" v2="10" />
+        <edge group="1" v1="9" v2="7" />
+        <edge group="1" v1="10" v2="8" />
+        <edge group="1" v1="9" v2="11" />
+        <edge group="1" v1="10" v2="11" />
+        <edge group="1" v1="11" v2="5" />
+        <edge group="1" v1="11" v2="6" />
+    </edges>
+    <faces>
+        <face numverts="4" group="1" v1="7" v2="1" v3="3" v4="9" uv1="-1" uv2="-1" uv3="-1" uv4="-1" />
+        <face numverts="4" group="1" v1="10" v2="4" v3="2" v4="8" uv1="-1" uv2="-1" uv3="-1" uv4="-1" />
+        <face numverts="4" group="1" v1="5" v2="3" v3="1" v4="0" uv1="-1" uv2="-1" uv3="-1" uv4="-1" />
+        <face numverts="4" group="1" v1="0" v2="2" v3="4" v4="5" uv1="-1" uv2="-1" uv3="-1" uv4="-1" />
+        <face numverts="4" group="1" v1="0" v2="1" v3="7" v4="6" uv1="-1" uv2="-1" uv3="-1" uv4="-1" />
+        <face numverts="4" group="1" v1="6" v2="7" v3="9" v4="11" uv1="-1" uv2="-1" uv3="-1" uv4="-1" />
+        <face numverts="4" group="1" v1="6" v2="8" v3="2" v4="0" uv1="-1" uv2="-1" uv3="-1" uv4="-1" />
+        <face numverts="4" group="1" v1="11" v2="10" v3="8" v4="6" uv1="-1" uv2="-1" uv3="-1" uv4="-1" />
+        <face numverts="4" group="1" v1="11" v2="9" v3="3" v4="5" uv1="-1" uv2="-1" uv3="-1" uv4="-1" />
+        <face numverts="4" group="1" v1="5" v2="4" v3="10" v4="11" uv1="-1" uv2="-1" uv3="-1" uv4="-1" />
+    </faces>
+</topogunscene>
