@@ -15,7 +15,7 @@
 #include "list.h"
 
 // Default Constructor
-// Purpose: Initializes the list sents null pointers and list to zero
+// Purpose: Initializes the list; set null pointers to first and last and list total to zero
 // Parameters: none
 // Returns: none
 List::List()
@@ -42,7 +42,7 @@ List::List(Node* f, Node* l, int n)
 // Returns: none
 List::~List()
 {
-	//Check if its been deleted
+	//Check if first been deleted
 	if (first != nullptr)
 	{
 		// deletes any dynamically allocated array
@@ -51,7 +51,7 @@ List::~List()
 		first = nullptr;
 	}
 
-	//Check if its been deleted
+	//Check if last been deleted
 	if (last != nullptr)
 	{
 		// deletes any dynamically allocated array
@@ -63,13 +63,16 @@ List::~List()
 }
 
 // push_front Function
-// Purpose: Adds an Node* to the start of list
+// Purpose: Adds a Node* to the start of list
 // Parameters: Node*
 // Returns: None
 void List::push_front(Node* n)
 {
+	//Check if the list even has a first node, if so make the old first linked to the new first
+	//else last is new node and first node
 	if(getFirst() != nullptr)
 		n->setNextNode(getFirst());
+	else last = n;
 	first = n;
 }
 
@@ -79,16 +82,14 @@ void List::push_front(Node* n)
 // Returns: None
 void List::push_back(Node* n)
 {
-	if (first != NULL)
-	{
-		Node* current = first;
-		while (current->getNextNode() != nullptr)
-		{
-			current = current->getNextNode();
-		}
-		current->setNextNode(n);
-	}
+	//Check if the list even has a last node, if so make the old last linked to the new last
+	if(getLast() != nullptr)
+		last->setNextNode(n);
+	//Make n the new last
 	last = n;
+	//if the list doesnt have a first then N is also the first
+	if (getFirst() == nullptr)
+		first = last;
 }
 
 // push_back Function
@@ -97,9 +98,22 @@ void List::push_back(Node* n)
 // Returns: None
 Node* List::pop_front()
 {
+		//Save temp first
 		Node* temp = first;
-		first = first->getNextNode();
+
+		//Check if first has a next node. If so first is now the next in line
+		if (first->getNextNode() != nullptr)
+			first = first->getNextNode();
+		else
+		{
+			//else its the only member so clear first and last
+			first = nullptr;
+			last = nullptr;
+		}
+
+		//detact temp from list
 		temp->setNextNode(nullptr);
+		//Send temp back to main
 		return temp;
 }
 
@@ -109,19 +123,29 @@ Node* List::pop_front()
 // Returns: None
 Node* List::pop_back()
 {
+	// Make a temp first
 	Node* current = first;
-	if (first->getNextNode() != nullptr)
+	
+	//check if there is only 1 item in the linked list
+	if (first != last)
 	{
+		//cycle through list unitil second to last
 		while (current->getNextNode() != last)
 			current = current->getNextNode();
+		//new last is the one before last
 		last = current;
+		//current node* is swap with old last
 		current = last->getNextNode();
+		//detact last node from list
 		last->setNextNode(nullptr);
 	}
 	else
 	{
-		return first;
+		//else clear first and last because its the only member in the linked list
+		first = nullptr;
+		last = nullptr;
 	}
+	//return old last node*
 	return current;
 }
 

@@ -44,8 +44,13 @@ Node::~Node()
 	{
 		// deletes any dynamically allocated pointers
 		delete next;
-		// Set its pointer to null
+
 		next = nullptr;
+	}
+	if (book != nullptr)
+	{
+		delete book;
+		book = nullptr;
 	}
 }
 

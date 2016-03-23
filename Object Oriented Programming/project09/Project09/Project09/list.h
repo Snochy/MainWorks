@@ -21,7 +21,7 @@ class List
 {
 public:
 	// Default Constructor
-	// Purpose: Initializes the list sents null pointers and list to zero
+	// Purpose: Initializes the list; set null pointers to first and last and list total to zero
 	// Parameters: none
 	// Returns: none
 	List();
@@ -39,7 +39,7 @@ public:
 	~List();
 
 	// push_front Function
-	// Purpose: Adds an Node* to the start of list
+	// Purpose: Adds a Node* to the start of list
 	// Parameters: Node*
 	// Returns: None
 	void push_front(Node*);

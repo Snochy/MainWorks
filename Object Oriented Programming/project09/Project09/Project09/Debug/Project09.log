@@ -1,3 +1,16 @@
-﻿  list.cpp
-  Project09.vcxproj -> E:\Digtal Media Projects\Projects\GithubProjects\Object Oriented Programming\project09\Project09\Debug\Project09.exe
-  Project09.vcxproj -> E:\Digtal Media Projects\Projects\GithubProjects\Object Oriented Programming\project09\Project09\Debug\Project09.pdb (Partial PDB)
+﻿Build started 3/23/2016 1:08:31 PM.
+     1>Project "D:\Zach WIP\Object Oriented Programming\project09\Project09\Project09\Project09.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt list.cpp
+         list.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Zach WIP\Object Oriented Programming\project09\Project09\Project09\Debug\Project09.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG:FASTLINK /PDB:"D:\Zach WIP\Object Oriented Programming\project09\Project09\Project09\Debug\Project09.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Zach WIP\Object Oriented Programming\project09\Project09\Project09\Debug\Project09.lib" /MACHINE:X86 Debug\book.obj
+         Debug\driver.obj
+         Debug\list.obj
+         Debug\Node.obj
+         Project09.vcxproj -> D:\Zach WIP\Object Oriented Programming\project09\Project09\Project09\Debug\Project09.exe
+     1>Done Building Project "D:\Zach WIP\Object Oriented Programming\project09\Project09\Project09\Project09.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.74
